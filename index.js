@@ -1,9 +1,13 @@
 function takeANumber(line, name){
-  line.push(name)
+  line.push(name);
     
-    return `Welcome, ${name}. You are number ${line.length} in line.`
+    return `Welcome, ${name}. You are number ${line.length} in line.`;
 }
 
 function nowServing(katzDeliLine){
-  
+    if (line.length === 0) {
+    return "There is nobody waiting to be served!";
+  }
+
+  return `Currently serving ${line.shift()}.`;
 }
